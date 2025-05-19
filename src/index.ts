@@ -10,7 +10,7 @@ import { configSchema } from './config-schema';
 import NavbarActionButton from "./navbar/navvar-action-button.component";
 
 
-const moduleName = '@openmrs/esm-recapture-extraction-app';
+const moduleName = '@nmrs-community/esm-recapture-extraction-app';
 
 const options = {
   featureName: 'recapture-extraction-app',
