@@ -1,0 +1,78 @@
+@import '~@openmrs/esm-styleguide/src/vars';
+
+.container {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.exportForm {
+  background-color: #005d5d;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+
+  :global(.cds--checkbox-wrapper) {
+    margin-bottom: 1rem;
+
+    :global(.cds--checkbox-label) {
+      color: white;
+    }
+
+    :global(.cds--checkbox:not(:checked) + label::before) {
+      background-color: white;
+    }
+
+
+    :global(.cds--checkbox:checked + .cds--checkbox-label::before) {
+      background-color: white;
+      border-color: white;
+    }
+
+    :global(.cds--checkbox:checked + .cds--checkbox-label::after) {
+      border-color: $ui-05;
+    }
+  }
+
+  :global(.cds--text-input) {
+    margin-bottom: 1rem;
+  }
+
+  :global(.cds--label) {
+    color: white;
+  }
+
+  :global(.cds--date-picker__label) {
+    color: white;
+  }
+}
+
+.cds--btn--primary {
+  background-color: #0b0b0b;
+}
+
+.dateRange {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.loadingOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
