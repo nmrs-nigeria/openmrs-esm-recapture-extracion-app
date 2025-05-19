@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json.openmrs.org/routes.schema.json",
+  "backendDependencies": {
+    "fhir2": ">=1.2",
+    "webservices.rest": "^2.24.0"
+  },
+  "extensions": [
+    {
+      "name": "recapture-extraction-dashboard",
+      "slot": "recapture-extraction-dashboard-slot",
+      "component": "root"
+    },
+    {
+      "name": "recapture-extraction-dashboard-link",
+      "slot": "homepage-dashboard-slot",
+      "component": "recaptureDashboardLink",
+      "meta": {
+        "name": "recapture-extraction",
+        "slot": "recapture-extraction-dashboard-slot",
+        "title": "Recapture Extraction"
+      }
+    },
+    {
+      "name": "nigeria-module-links",
+      "slot": "top-nav-actions-slot",
+      "component": "navbarButtons",
+      "order": 5,
+      "online": true,
+      "offline": true
+    }
+  ],
+  "pages": [
+    {
+      "component": "root",
+      "route": "recapture-extraction"
+    }
+  ]
+}
